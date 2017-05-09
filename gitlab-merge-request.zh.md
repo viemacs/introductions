@@ -14,30 +14,35 @@ Gitlab 的 mr 提交时可以填写 mr 的*标题*和*描述*, 指定处理人, 
 在 gitlab 的 markdown 格式中可以使用符号来引用 issue, commit, 成员.
 使用引用可以提醒相关小伙伴查看mr, 说明此次mr是解决哪个问题, 修正哪行代码, 属于哪个标签, 对应哪个里程碑.
 
-- @username 用户
-- @groupname 组
-- @all 整个team
+```
+@username 用户
+@groupname 组
+@all 整个team
 
-- #issue
-- !merge_request
-- ~label
-- %milestone
+#issue
+!merge_request
+~label
+%milestone
 
-- 9ba12248   指定 commit hash
-- 9ba12248...b19a04f5 指定 commit 比较范围
-- [NAME](path-to-file) 引用文件
-- [NAME](path-to-file#L20) 引用文件的指定行
-
+9ba12248   指定 commit hash
+9ba12248...b19a04f5 指定 commit 比较范围
+[NAME](path-to-file) 引用文件
+[NAME](path-to-file#L20) 引用文件的指定行
+```
 
 可以在引用前指明项目名称来引用其他项目
 
-- project#issue
-- namespace/project#issue
+```
+project#issue
+namespace/project#issue
+```
 
 语法高亮
 
-- [+foo+] 增
-- [-bar-] 删
+```
+[+foo+] 增
+[-bar-] 删
+```
 
 任务列表
 
